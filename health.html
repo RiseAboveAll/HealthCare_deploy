@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+
+<body>
+
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Health Care</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Prediction
+        <br>
+        </h5>
+      </div>
+
+              <div class="row">
+    <form action='/predict' method="post" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+            <label for="Age"><b>Age</b></label>
+            <br>
+          <input placeholder="Age" name="Age" id="Age" type="text" class="validate">
+        </div>
+        <div class="Category1">
+
+          <label for="Category1"><b>First Category </b></label>
+            <br>
+          <input id="Category1" name="Category1" placeholder="First Category"  type="text" class="validate">
+
+        </div>
+
+        <div class="Camp_Duration_Days">
+            <label for="Camp_Duration_Days"><b>Camp Duration</b></label>
+            <br>
+          <input id="Camp_Duration_Days" name="Camp_Duration_Days" placeholder="Camp_Duration_Days" type="text" class="validate">
+
+        </div>
+
+        </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+      </div>
+    </form>
+      </div>
+
+      <br>
+        {{pred}}<br>
+
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>>
+
+  
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
